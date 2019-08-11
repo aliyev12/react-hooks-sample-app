@@ -1,0 +1,23 @@
+.CustomHooks {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.CustomHooks .container {
+  margin: auto;
+}
+
+.CustomHooks .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CustomHooks .box {
+  border: 3px solid pink;
+  border-radius: 50%;
+}

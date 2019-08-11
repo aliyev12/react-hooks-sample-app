@@ -1,26 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import { AppProvider } from './contexts/SizesContext';
+import { ReducerProvider } from './contexts/ReducerContext';
+import Home from './components/Home';
+import Header from './components/Header';
+import CustomHooks from './components/CustomHooks';
+import Refactoring from './components/Refactoring';
+import ContextExample from './components/ContextExample';
+import ReducerExample from './components/ReducerExample';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppProvider>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={routerProps => <Home {...routerProps} />}
+          />
+          <Route
+            exact
+            path="/custom-hooks"
+            render={routerProps => <CustomHooks {...routerProps} />}
+          />
+          <Route
+            exact
+            path="/refactoring"
+            render={routerProps => <Refactoring {...routerProps} />}
+          />
+          <Route
+            exact
+            path="/context"
+            render={routerProps => <ContextExample {...routerProps} />}
+          />
+          <Route
+            exact
+            path="/reducer"
+            render={routerProps => (
+              <ReducerProvider>
+                <ReducerExample {...routerProps} />
+              </ReducerProvider>
+            )}
+          />
+        </Switch>
+      </div>
+    </AppProvider>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,69 @@
+.ContextExample {
+  margin: 50px auto;
+  width: 30vw;
+}
+
+.ContextExample .sizesForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContextExample .sizesForm > label {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.ContextExample .sizesForm input {
+  width: 100%;
+  margin-left: 5px;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.ContextExample .sizesForm .submitBtn {
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: unset;
+}
+.ContextExample .sizesForm .submitBtn:hover {
+  background: rgba(51, 51, 51, 0.591);
+  color: #fff;
+  padding: 5px 10px;
+  border: unset;
+}
+
+.ContextExample .sizesForm label > span {
+  white-space: nowrap;
+}
+
+.ContextExample .fromContext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border: 2px solid #0b7304;
+  padding: 20px;
+}
+.ContextExample .fromContext ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ContextExample .error {
+  margin-top: 20px;
+  border-left: 10px solid red;
+  padding: 10px;
+  background-color: #ff00002b;
+}
+
+.ContextExample .saveBtn,
+.ContextExample .editBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 3px;
+}

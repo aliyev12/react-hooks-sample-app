@@ -1,0 +1,20 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+.Home ul,
+.Home h1 {
+  margin: auto;
+  width: 50vw;
+}
+
+.Home h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.Home ul li {
+  padding: 10px 0;
+}

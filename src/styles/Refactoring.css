@@ -1,0 +1,84 @@
+.Refactoring {
+  display: flex;
+  padding: 100px;
+}
+
+.Refactoring h3 {
+  text-align: center;
+}
+
+.Refactoring p {
+  font-style: italic;
+}
+
+.Refactoring .inputContainer,
+.Refactoring .needRefactoring {
+  padding: 10px;
+  display: flex;
+  border: 2px solid pink;
+  border-radius: 5px;
+  width: 400px;
+  min-height: 500px;
+  justify-content: center;
+}
+
+.Refactoring .propContainer {
+  min-height: 20px;
+  border-bottom: 2px solid grey;
+  padding-bottom: 10px;
+}
+
+.Refactoring .newNameForm {
+  padding: 20px 0;
+}
+
+.Refactoring .newNameForm > * {
+  margin: 0;
+}
+
+.Refactoring .newNameForm  input,
+.Refactoring .newNameForm  button
+ {
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: transparent;
+}
+
+.Refactoring .propContainer {
+  min-height: 20px;
+  border-bottom: 2px solid grey;
+  padding-bottom: 10px;
+}
+
+.Refactoring .inputContainer > input,
+.Refactoring .inputContainer > button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.Refactoring .inputContainer > input {
+  margin-right: 3px;
+}
+.Refactoring .inputContainer > button {
+  margin-left: 3px;
+  margin-right: auto;
+}
+
+.Refactoring .imageContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Refactoring .arrow {
+  display: flex;
+  margin: auto;
+}
+.Refactoring .arrow > span {
+  font-size: 100px;
+  color: pink;
+}
